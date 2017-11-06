@@ -1,0 +1,46 @@
+﻿<telerik:RadRibbonWindow x:Class="TopoEditor.Views.Shell"
+                         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                         xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                         xmlns:docking="clr-namespace:TopoEditor.Docking"
+                         xmlns:navigation="clr-namespace:Telerik.Windows.Controls.Navigation;assembly=Telerik.Windows.Controls.Navigation"
+                         navigation:RadWindowInteropHelper.ShowInTaskbar="True"
+                         xmlns:prism="http://www.codeplex.com/prism"
+                         prism:ViewModelLocator.AutoWireViewModel="True"
+                         Style="{StaticResource RadRibbonWindowStyle}">
+    <!--<Grid>
+        <TextBlock Text="The application is shown inside RadWindow." />
+    </Grid>-->
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <telerik:RadMenu>
+            <telerik:RadMenuItem Header="File" prism:RegionManager.RegionName="FileMenuRegion">
+            </telerik:RadMenuItem>
+        </telerik:RadMenu>
+        <telerik:RadDocking Grid.Row="2"
+                            x:Name="radDocking"
+                            prism:RegionManager.RegionName="DocumentsRegion"
+                            Background="Green"
+                            BorderThickness="0">
+            <telerik:RadDocking.DockingPanesFactory>
+                <docking:ShellDockingPanesFactory />
+            </telerik:RadDocking.DockingPanesFactory>
+            <telerik:RadDocking.CurrentSaveLoadLayoutHelper>
+                <docking:PRISMSaveLoadLayoutHelper />
+            </telerik:RadDocking.CurrentSaveLoadLayoutHelper>
+            <telerik:RadSplitContainer InitialPosition="DockedLeft">
+                <telerik:RadPaneGroup x:Name="leftGroup" telerik:RadDocking.SerializationTag="leftGroup" />
+            </telerik:RadSplitContainer>
+            <telerik:RadSplitContainer InitialPosition="DockedRight">
+                <telerik:RadPaneGroup x:Name="rightGroup" telerik:RadDocking.SerializationTag="rightGroup" />
+            </telerik:RadSplitContainer>
+            <telerik:RadSplitContainer InitialPosition="DockedBottom">
+                <telerik:RadPaneGroup x:Name="bottomGroup" telerik:RadDocking.SerializationTag="bottomGroup" />
+            </telerik:RadSplitContainer>
+        </telerik:RadDocking>
+    </Grid>
+</telerik:RadRibbonWindow>

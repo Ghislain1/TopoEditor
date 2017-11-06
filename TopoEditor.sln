@@ -1,0 +1,96 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopoEditor", "TopoEditor\TopoEditor.csproj", "{D2309632-02E6-4896-BEA7-557670C8D5C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{96192E2B-90DA-49F1-AC4C-AAD6417110A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopoEditor.Ribbon", "Modules\TopoEditor.Ribbon\TopoEditor.Ribbon.csproj", "{B771C222-1013-4EB3-A6A8-392B56821FA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopoEditor.Infrastructure", "TopoEditor.Infrastructure\TopoEditor.Infrastructure.csproj", "{E3F0F3EC-9B62-47BB-891D-FF35676E142A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopoEditor.PlugIns", "TopoEditor.PlugIns\TopoEditor.PlugIns.csproj", "{6106C412-431C-49E5-899F-44118D1B824B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopoEditor.ControlExtension", "TopoEditor.ControlExtension\TopoEditor.ControlExtension.csproj", "{27C066EB-25A0-4ED0-8602-606BD9CA68FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopoEditor.Output", "TopoEditor.Output\TopoEditor.Output.csproj", "{347C5A31-228E-46E6-B6D5-6103DE0C2099}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopoEditor.ErrorList", "TopoEditor.ErrorList\TopoEditor.ErrorList.csproj", "{305EE6B7-593D-47A6-9D98-D25506162697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopoEditor.Toolbox", "TopoEditor.Toolbox\TopoEditor.Toolbox.csproj", "{4BD643CD-8A00-481A-8810-7CF15B52576E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopoEditor.SolutionExplorer", "TopoEditor.SolutionExplorer\TopoEditor.SolutionExplorer.csproj", "{B447E1F3-91A2-4ADF-ADBE-79F99467D9F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopoEditor.Properties", "TopoEditor.Properties\TopoEditor.Properties.csproj", "{891945C5-0F48-493D-9BE8-384FAEC28029}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopoEditor.StartPage", "TopoEditor.StartPage\TopoEditor.StartPage.csproj", "{8D1DB4CD-0DF1-4988-ACC7-CB8BFE1BA5F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2309632-02E6-4896-BEA7-557670C8D5C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2309632-02E6-4896-BEA7-557670C8D5C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2309632-02E6-4896-BEA7-557670C8D5C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2309632-02E6-4896-BEA7-557670C8D5C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B771C222-1013-4EB3-A6A8-392B56821FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B771C222-1013-4EB3-A6A8-392B56821FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B771C222-1013-4EB3-A6A8-392B56821FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B771C222-1013-4EB3-A6A8-392B56821FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3F0F3EC-9B62-47BB-891D-FF35676E142A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3F0F3EC-9B62-47BB-891D-FF35676E142A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F0F3EC-9B62-47BB-891D-FF35676E142A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3F0F3EC-9B62-47BB-891D-FF35676E142A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6106C412-431C-49E5-899F-44118D1B824B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6106C412-431C-49E5-899F-44118D1B824B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6106C412-431C-49E5-899F-44118D1B824B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6106C412-431C-49E5-899F-44118D1B824B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27C066EB-25A0-4ED0-8602-606BD9CA68FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C066EB-25A0-4ED0-8602-606BD9CA68FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C066EB-25A0-4ED0-8602-606BD9CA68FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C066EB-25A0-4ED0-8602-606BD9CA68FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{347C5A31-228E-46E6-B6D5-6103DE0C2099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{347C5A31-228E-46E6-B6D5-6103DE0C2099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{347C5A31-228E-46E6-B6D5-6103DE0C2099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{347C5A31-228E-46E6-B6D5-6103DE0C2099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{305EE6B7-593D-47A6-9D98-D25506162697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{305EE6B7-593D-47A6-9D98-D25506162697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{305EE6B7-593D-47A6-9D98-D25506162697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{305EE6B7-593D-47A6-9D98-D25506162697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BD643CD-8A00-481A-8810-7CF15B52576E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BD643CD-8A00-481A-8810-7CF15B52576E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BD643CD-8A00-481A-8810-7CF15B52576E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BD643CD-8A00-481A-8810-7CF15B52576E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B447E1F3-91A2-4ADF-ADBE-79F99467D9F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B447E1F3-91A2-4ADF-ADBE-79F99467D9F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B447E1F3-91A2-4ADF-ADBE-79F99467D9F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B447E1F3-91A2-4ADF-ADBE-79F99467D9F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{891945C5-0F48-493D-9BE8-384FAEC28029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{891945C5-0F48-493D-9BE8-384FAEC28029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{891945C5-0F48-493D-9BE8-384FAEC28029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{891945C5-0F48-493D-9BE8-384FAEC28029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D1DB4CD-0DF1-4988-ACC7-CB8BFE1BA5F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D1DB4CD-0DF1-4988-ACC7-CB8BFE1BA5F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D1DB4CD-0DF1-4988-ACC7-CB8BFE1BA5F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D1DB4CD-0DF1-4988-ACC7-CB8BFE1BA5F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B771C222-1013-4EB3-A6A8-392B56821FA7} = {96192E2B-90DA-49F1-AC4C-AAD6417110A6}
+		{347C5A31-228E-46E6-B6D5-6103DE0C2099} = {96192E2B-90DA-49F1-AC4C-AAD6417110A6}
+		{305EE6B7-593D-47A6-9D98-D25506162697} = {96192E2B-90DA-49F1-AC4C-AAD6417110A6}
+		{4BD643CD-8A00-481A-8810-7CF15B52576E} = {96192E2B-90DA-49F1-AC4C-AAD6417110A6}
+		{B447E1F3-91A2-4ADF-ADBE-79F99467D9F8} = {96192E2B-90DA-49F1-AC4C-AAD6417110A6}
+		{891945C5-0F48-493D-9BE8-384FAEC28029} = {96192E2B-90DA-49F1-AC4C-AAD6417110A6}
+		{8D1DB4CD-0DF1-4988-ACC7-CB8BFE1BA5F2} = {96192E2B-90DA-49F1-AC4C-AAD6417110A6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {626575B2-ABF4-4F60-9297-0783B1174EFB}
+	EndGlobalSection
+EndGlobal
