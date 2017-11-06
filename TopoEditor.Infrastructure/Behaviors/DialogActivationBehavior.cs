@@ -1,9 +1,9 @@
 ﻿namespace TopoEditor.Infrastructure.Behaviors
 {
-    using System.Collections.Specialized;
-    using System.Windows;
     using Prism.Regions;
     using Prism.Regions.Behaviors;
+    using System.Collections.Specialized;
+    using System.Windows;
 
     /// <summary>
     /// Defines a behavior that creates a Dialog to display the active view of the target <see cref="IRegion"/>.

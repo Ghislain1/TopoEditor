@@ -35,7 +35,7 @@
         private Guid prevSelectedGuid;
         private OutputBufferViewModel selectedOutputBufferVM;
 
-        public OutputViewModel(OutputServiceSettingsImpl outputServiceSettingsImpl, IUnityContainer container)
+        public OutputViewModel(IUnityContainer container)
         {
             this.container = container;
             // this.outputWindowOptionsService =
@@ -45,11 +45,11 @@
             // this.container.Resolve<IEditorOperationsFactoryService>(); this.logEditorProvider =
             // this.container.Resolve<ILogEditorProvider>(); this.outputServiceSettingsImpl =
             // outputServiceSettingsImpl; prevSelectedGuid = outputServiceSettingsImpl.SelectedGuid;
-            this.pickSaveFilename = this.container.Resolve<IPickSaveFilename>();
-            this.menuService = this.container.Resolve<IMenuService>();
+            //this.pickSaveFilename = this.container.Resolve<IPickSaveFilename>();
+            // this.menuService = this.container.Resolve<IMenuService>();
             outputBuffers = new ObservableCollection<OutputBufferViewModel>();
             outputBuffers.CollectionChanged += OutputBuffers_CollectionChanged;
-            outputServiceListeners = this.container.Resolve<IOutputServiceListener>();
+            // outputServiceListeners = this.container.Resolve<IOutputServiceListener>();
 
             // var listeners = outputServiceListeners.OrderBy(a => a.Metadata.Order).ToArray();
             Dispatcher.CurrentDispatcher.BeginInvoke(DispatcherPriority.Send, new Action(() =>
@@ -92,37 +92,37 @@
             }
         }
 
-        public bool ShowLineNumbers
-        {
-            get { return outputWindowOptionsService.Default.LineNumberMargin; }
-            set { outputWindowOptionsService.Default.LineNumberMargin = value; }
-        }
+        //public bool ShowLineNumbers
+        //{
+        //    get { return outputWindowOptionsService.Default.LineNumberMargin; }
+        //    set { outputWindowOptionsService.Default.LineNumberMargin = value; }
+        //}
 
-        public bool ShowTimestamps
-        {
-            get { return outputWindowOptionsService.Default.ShowTimestamps; }
-            set { outputWindowOptionsService.Default.ShowTimestamps = value; }
-        }
+        //public bool ShowTimestamps
+        //{
+        //    get { return outputWindowOptionsService.Default.ShowTimestamps; }
+        //    set { outputWindowOptionsService.Default.ShowTimestamps = value; }
+        //}
 
         public object TextEditorUIObject => SelectedOutputBufferVM?.TextEditorUIObject;
 
-        public bool WordWrap
-        {
-            get
-            {
-                return (outputWindowOptionsService.Default.WordWrapStyle & WordWrapStyles.WordWrap) != 0;
-            }
-            set
-            {
-                if (WordWrap != value)
-                {
-                    if (value)
-                        outputWindowOptionsService.Default.WordWrapStyle |= WordWrapStyles.WordWrap;
-                    else
-                        outputWindowOptionsService.Default.WordWrapStyle &= ~WordWrapStyles.WordWrap;
-                }
-            }
-        }
+        //public bool WordWrap
+        //{
+        //    get
+        //    {
+        //        return (outputWindowOptionsService.Default.WordWrapStyle & WordWrapStyles.WordWrap) != 0;
+        //    }
+        //    set
+        //    {
+        //        if (WordWrap != value)
+        //        {
+        //            if (value)
+        //                outputWindowOptionsService.Default.WordWrapStyle |= WordWrapStyles.WordWrap;
+        //            else
+        //                outputWindowOptionsService.Default.WordWrapStyle &= ~WordWrapStyles.WordWrap;
+        //        }
+        //    }
+        //}
 
         public double ZoomLevel => SelectedOutputBufferVM?.ZoomLevel ?? 100;
 

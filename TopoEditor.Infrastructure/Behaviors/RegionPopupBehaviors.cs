@@ -1,10 +1,10 @@
 ﻿namespace TopoEditor.Infrastructure.Behaviors
 {
+    using Microsoft.Practices.ServiceLocation;
+    using Prism.Regions;
+    using System;
     using System.ComponentModel;
     using System.Windows;
-    using Prism.Regions;
-    using Microsoft.Practices.ServiceLocation;
-    using System;
 
     internal class RegionPopupBehaviors
     {

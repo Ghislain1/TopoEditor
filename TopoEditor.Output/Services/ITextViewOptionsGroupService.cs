@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TopoEditor.Infrastructure.Interfaces;
 
 namespace TopoEditor.Output.Services
 {

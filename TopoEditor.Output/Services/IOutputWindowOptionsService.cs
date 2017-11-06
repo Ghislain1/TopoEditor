@@ -9,7 +9,7 @@
 
     public interface IOutputWindowOptionsService
     {
-        IOutputWindowOptions Default { get; }
-        Action<object, object> OptionChanged { get; set; }
+        //IOutputWindowOptions Default { get; }
+        //Action<object, object> OptionChanged { get; set; }
     }
 }

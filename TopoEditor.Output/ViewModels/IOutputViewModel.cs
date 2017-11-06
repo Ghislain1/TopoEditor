@@ -15,11 +15,11 @@
         IInputElement FocusedElement { get; }
         OutputBufferViewModel SelectedOutputBufferVM { get; }
 
-        bool ShowLineNumbers { get; set; }
+        //bool ShowLineNumbers { get; set; }
 
-        bool ShowTimestamps { get; set; }
+        //bool ShowTimestamps { get; set; }
 
-        bool WordWrap { get; set; }
+        //bool WordWrap { get; set; }
 
         double ZoomLevel { get; }
 

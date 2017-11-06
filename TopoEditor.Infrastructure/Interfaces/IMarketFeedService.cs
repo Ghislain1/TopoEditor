@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TopoEditor.Infrastructure.Interfaces
+﻿namespace TopoEditor.Infrastructure.Interfaces
 {
-    interface IMarketFeedService
+    internal interface IMarketFeedService
     {
     }
 }

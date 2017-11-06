@@ -1,6 +1,6 @@
 ﻿namespace TopoEditor.Infrastructure.Interfaces
 {
-    public interface IContentTypeRegistryServiceA
+    public class EditorOptionKey<T>
     {
     }
 }

@@ -18,10 +18,7 @@ namespace TopoEditor.Output.Views
 
     public partial class OutputView : RadPane, IPaneModel, PRISMIActiveAware
     {
-        public OutputView()
-        {
-            InitializeComponent();
-        }
+        public OutputView() => InitializeComponent();
 
         public event EventHandler IsActiveChanged;
 
